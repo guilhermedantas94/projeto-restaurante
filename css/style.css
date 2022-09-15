@@ -1,0 +1,207 @@
+@font-face {
+  font-family: "Kill";
+  src: url(../font/KillTheLights.ttf);
+}
+html {
+  font-size: 10px;
+}
+
+body {
+  margin: 0;
+  background-color: #EEEEEE;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+p, a {
+  font-size: 1.6rem;
+}
+
+p {
+  color: #888888;
+}
+
+.row {
+  --bs-gutter-x: 2.4rem;
+}
+
+img {
+  max-width: 100%;
+}
+
+.btn {
+  display: inline-block;
+  text-decoration: none;
+  color: #888888;
+  border: 1px solid #888888;
+  border-radius: 5px;
+  padding: 6px 16px;
+}
+.btn:hover {
+  background-color: #600000;
+  border: 1px solid;
+  color: white;
+}
+
+.divisor {
+  margin: 50px 0;
+  display: flex;
+  justify-content: center;
+}
+
+.bg-primary {
+  background-color: #8C0000;
+}
+
+.header {
+  background-image: linear-gradient(#8C0000, #600000);
+  padding: 24px 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.header .menu {
+  margin-top: 20px;
+}
+.header .menu ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  text-align: center;
+}
+.header .menu ul li {
+  display: inline-block;
+}
+.header .menu ul li:hover .sub-menu {
+  opacity: 1;
+  pointer-events: all;
+  transform: translateY(0);
+}
+.header .menu ul li a {
+  color: white;
+  text-decoration: none;
+  padding: 0 30px;
+  font-family: "kill";
+  text-transform: uppercase;
+}
+.header .menu ul li a:hover {
+  text-decoration: underline;
+}
+.header .menu ul li a:active {
+  color: #888888;
+}
+.header .menu ul li .sub-menu {
+  padding-top: 24px;
+  position: absolute;
+  z-index: 2;
+  opacity: 0;
+  pointer-events: none;
+  transition: 0.3s ease-out;
+  transform: translateY(20px);
+}
+.header .menu ul li .sub-menu li {
+  display: block;
+  text-align: left;
+}
+.header .menu ul li .sub-menu li a {
+  display: block;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  background-color: #600000;
+}
+.header .menu ul li .sub-menu li a:hover {
+  background-color: #8C0000;
+}
+
+.banner {
+  text-align: center;
+  position: relative;
+}
+.banner img, .banner video {
+  width: 100%;
+  display: block;
+}
+.banner h1 {
+  color: white;
+  font-size: 4rem;
+  font-family: "Kill";
+  font-weight: 400;
+  margin: 0;
+}
+.banner p {
+  color: white;
+}
+.banner .overlay-video {
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.266);
+  position: absolute;
+  z-index: 1;
+  display: flex;
+  align-items: center;
+}
+.banner a {
+  color: white;
+  text-decoration: none;
+  display: inline-block;
+  border: solid 1px white;
+  border-radius: 5px;
+  padding: 10px 20px;
+  transition: 0.5s;
+}
+.banner a:hover {
+  background-color: rgba(0, 0, 0, 0.46);
+}
+
+.s-presentation {
+  margin-top: 50px;
+  text-align: center;
+}
+.s-presentation h2 {
+  color: #8C0000;
+  font-family: "kill";
+  font-weight: 400;
+  letter-spacing: 2px;
+  margin: 0 0 10px 0;
+  font-size: 2.4rem;
+}
+
+.s-gallery h3 {
+  color: #8C0000;
+  font-family: "kill";
+  font-weight: 400;
+  letter-spacing: 2px;
+  margin: 0 0 10px 0;
+  font-size: 2.1rem;
+}
+.s-gallery img {
+  transition: 0.3s;
+  opacity: 0.7;
+  position: relative;
+}
+.s-gallery img:hover {
+  opacity: 1;
+  transform: scale(1.1);
+  z-index: 1;
+  filter: drop-shadow(3px 3px 5px black);
+}
+
+.comment {
+  padding: 50px 0;
+  margin-top: 50px;
+  text-align: center;
+}
+.comment p {
+  color: white;
+}
+.comment p:last-child {
+  margin-bottom: 0;
+}
+
+.footer {
+  background-image: linear-gradient(#8C0000, #600000);
+  text-align: center;
+  font-size: 14px;
+  color: white;
+  padding: 15px 0;
+  text-transform: uppercase;
+}/*# sourceMappingURL=style.css.map */
